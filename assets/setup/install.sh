@@ -38,7 +38,7 @@ sudo -HEu ${GITLAB_USER} git config --global core.autocrlf input
 # install gitlab-shell
 echo "Cloning gitlab-shell v.${GITLAB_SHELL_VERSION}..."
 sudo -u git -H git clone -q -b v${GITLAB_SHELL_VERSION} --depth 1 \
-  https://gitlab.com/gitlab-org/gitlab-ee.git ${GITLAB_SHELL_INSTALL_DIR}
+  https://github.com/gitlabhq/gitlab-shell.git  ${GITLAB_SHELL_INSTALL_DIR}
 
 cd ${GITLAB_SHELL_INSTALL_DIR}
 sudo -u git -H cp -a config.yml.example config.yml
